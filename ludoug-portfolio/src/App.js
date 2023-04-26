@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <img src={logo} alt="logo" width="200" height="200" className='perfil'/>
-          Meu portifólio está em construção, mas em breve estará disponível<br/>
+          Olá sou o Luciano e estou construindo meu portfólio, em breve estará pronto!<br/>
           Até lá se divirta gerando fotos aleatórias de gatos com o botão abaixo
       </header>
       <br/>
