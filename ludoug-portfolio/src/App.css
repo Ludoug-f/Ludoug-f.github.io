@@ -48,7 +48,8 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
-  background-color: rgb(15, 15, 15);
+  background-color: #081109;
+  color: #ffffff;
 }
 
 .catImg {
