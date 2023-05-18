@@ -3,7 +3,6 @@ import "../style/NavMenu.css";
 
 export default function NavMenu() {
 return (
-  <header className="header">
     <nav className="nav-menu">
         <ul>
             <li><a href="#home">Início</a></li>
@@ -13,6 +12,5 @@ return (
             <li><a href="#contact">Contato</a></li>
         </ul>
     </nav>
-  </header>
   );
 }

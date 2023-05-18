@@ -1,93 +1,27 @@
+body {
+  background-color: #000000;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.perfil {
-  margin-bottom: 10px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-  }
-}
-
-.App-header {
-  min-height: 5vh;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
-  color: white;
+  color: rgba(255, 255, 255, 0.596);
+  font-family: 'Rajdhani', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-body {
+main {
+  margin-top: 4em;
+  width: 100%;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: center;
-  background-color: #081109;
-  color: #ffffff;
-}
-
-.catImg {
-  max-width: 600px;
-  max-height: 600px;
-}
-
-.All {
-  text-align: center;
-  margin: 10px;
-  color: rgb(15, 15, 15);
-}
-
-.myButton {
-	box-shadow:inset 0px 0px 27px 0px #efdcfb;
-	background-color:transparent;
-	border-radius:18px;
-	border:1px solid #c584f3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:23px;
-	font-weight:bold;
-	padding:10px 25px;
-	text-decoration:none;
-	text-shadow:-1px 1px 14px #9752cc;
-}
-.myButton:hover {
-	background-color:transparent;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-.text {
-  color: rgb(15, 15, 15);
-text-align: center;
-margin: 5px;
+  flex-direction: column;
+  align-items: center;
 }

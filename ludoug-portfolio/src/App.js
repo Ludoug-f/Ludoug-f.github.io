@@ -1,15 +1,25 @@
 import React from 'react';
 import './App.css';
 import NavMenu from './components/NavMenu';
-// import Sobre from './components/Sobre';
+import Sobre from './components/Sobre';
+import Skills from './components/Skills';
+import Projetos from './components/Projetos';
+import Contato from './components/Contato';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <NavMenu />
+      <header>
+        <NavMenu />
+      </header>
       <main>
-        {/* <Sobre /> */}
+        <Sobre />
+        <Skills />
+        <Projetos />
+        <Contato />
       </main>
+        <Footer />
     </div>
   );
 }
