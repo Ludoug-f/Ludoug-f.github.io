@@ -1,31 +1,39 @@
-/* .nav-menu {
-  background-color: rgb(148, 0, 0);
-} */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
 ul {
+  height: 86%;
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
 }
 
 li {
-  margin: 0 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 a {
+  height: 100%;
+  font-size: 1.3em;
   color: #ffffff;
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #379745;
-  transition: background-color 0.3s ease-in-out;
-  
+  display: flex;
+  align-items: center;
+  padding: 4px 25px;
+  transition: 0.3s ease-in-out;
 }
 
 a:hover {
   background-color: #ffffff;
   color: #000000;
+  font-size: 1.7em;
+  transition: 0.5s ease-in-out;
 }
