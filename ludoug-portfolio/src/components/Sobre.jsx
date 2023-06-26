@@ -3,6 +3,14 @@ import "../style/Sobre.css";
 
 export default function Sobre() {
   return(
-    <h2>Sobre</h2>
+    <div className="sobre">
+      <div className="title">
+      <h3 className="line">Seja bem vindo, eu sou</h3>
+      </div>
+      <div>
+      <p className="line typing-animation">Luciano Freitas</p>
+      <p className="line typing-animation">Web Developer</p>
+      </div>
+    </div>
   );
 }
