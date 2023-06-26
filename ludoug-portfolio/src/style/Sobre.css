@@ -10,10 +10,9 @@
   background-size: cover;
 }
 
-.line {
+.line-title {
   display: flex;
-  color: aliceblue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255, 255, 255);
   font-size: 4em;
   margin: 0 auto;
   white-space: nowrap;
@@ -22,8 +21,21 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
+.line {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  margin: 0 auto;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
 .typing-animation {
-  animation: typing 3s steps(30) infinite normal both;
+  animation: typing 4s steps(18) infinite normal both,
+  blink-caret 500ms infinite normal;
 }
 
 @keyframes typing {
@@ -31,6 +43,15 @@
     width: 0;
   }
   to {
-    width: 13ch;
+    width: 12.5ch;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-right-color: rgb(255, 255, 255);
+  }
+  to {
+    border-right-color: transparent;
   }
 }
