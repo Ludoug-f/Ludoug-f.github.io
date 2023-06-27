@@ -10,11 +10,7 @@
   background-size: cover;
 }
 
-.container {
-  display: inline-flex;
-}
-
-.container .estatico {
+.container .static {
   display: flex;
   color: rgb(255, 255, 255);
   align-items: center;
@@ -25,14 +21,32 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
-.container .dinamico {
+.container .dinamic {
   line-height: 8vh;
   height: 8vh;
   overflow: hidden;
   padding-left: 3ch;
 }
 
-.dinamico li {
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13.5ch;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-right-color: rgb(255, 255, 255);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.dinamic li {
   list-style: none;
   color: rgb(255, 255, 255);
   font-size: 8vh;
@@ -40,7 +54,7 @@
   white-space: nowrap;
   position: relative;
   font-family: 'Rajdhani', sans-serif;
-  animation: slide 5s steps(2) infinite;
+  animation: slide 8s steps(2) infinite;
 }
 
 @keyframes slide {
@@ -49,24 +63,13 @@
   }
 }
 
-.dinamico li span::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  border-left: 2px solid white;
-  animation: typing 2.5s steps(15) infinite;
-  background-color: black;
-}
-
-.dinamico li span {
+.dinamic li span {
   position: relative;
+  overflow: hidden;
+  border-right: 4px solid white;
 }
 
-@keyframes typing {
-  100% {
-    left: 120%;
-    margin: 0 -1ch 0 1ch;
-  }
+.typing-animation {
+  animation: typing 4s steps(16) infinite normal both,
+  blink-caret 500ms infinite normal;
 }
