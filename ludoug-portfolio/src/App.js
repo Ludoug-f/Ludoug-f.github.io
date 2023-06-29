@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import NavMenu from './components/NavMenu';
-import Sobre from './components/Sobre';
+import Opening from './components/Opening';
 import Skills from './components/Skills';
-import Projetos from './components/Projetos';
-import Contato from './components/Contato';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
@@ -14,12 +15,15 @@ function App() {
         <NavMenu />
       </header>
       <main>
-        <Sobre />
+        <Opening />
+        <About />
         <Skills />
-        <Projetos />
-        <Contato />
+        <Projects />
+        <Contact />
       </main>
+      <footer>
         <Footer />
+      </footer>
     </div>
   );
 }

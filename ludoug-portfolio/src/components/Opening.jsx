@@ -1,9 +1,9 @@
 import React from "react";
-import "../style/Sobre.css";
+import "../style/Opening.css";
 
-export default function Sobre() {
+export default function Opening() {
   return(
-    <div class="sobre">
+    <div class="opening">
        <div className="container">
         <div className="static">Seja bem vindo, eu sou</div>
         <ol className="dinamic">
