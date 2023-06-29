@@ -1,0 +1,66 @@
+.container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: rgb(8, 8, 8) ;
+}
+
+.banner-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(7, 24, 24);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+    padding: 1%;
+}
+
+.text-bio {
+  /* height: 100%; */
+  width: 70%;
+  font-size: larger;
+  color: rgb(234, 255, 255);
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.text-bio p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-bio h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.text-bio h2 {
+  color: rgb(234, 255, 255);
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.profile-img {
+  height: 100%;
+  width: 35%;
+}
+
+.profile-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+  margin-left: 3%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
