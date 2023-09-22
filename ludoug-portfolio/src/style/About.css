@@ -2,29 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    background-color: rgb(8, 8, 8) ;
+    height: 45rem;
 }
 
 .banner-bio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 75%;
-    background-color: rgb(7, 24, 24);
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
-    padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 75%;
+  background-color: rgb(7, 24, 24);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+  padding: 1%;
 }
 
 .text-bio {
-  /* height: 100%; */
   width: 70%;
-  font-size: larger;
+  font-size: 1.4rem;
   color: rgb(234, 255, 255);
-  margin-right: 3%;
-  margin-left: 3%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .text-bio p {
@@ -45,17 +43,9 @@
   font-weight: 200;
 }
 
-.profile-img {
-  height: 100%;
-  width: 35%;
-}
-
 .profile-img img {
   height: 100%;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 5px rgb(0, 0, 0);
-  margin-left: 3%;
 }
 
 .row {
@@ -63,4 +53,72 @@
   justify-content: center;
   align-items: center;
   height: 90%;
+  flex-wrap: wrap;
+}
+
+.cv {
+  display: flex;
+  margin-top: 1ch;
+  flex-direction: row-reverse;
+  /* justify-content: center; */
+}
+
+.cv a img{
+  margin-bottom: 0.5em;
+  width: 2.5em;
+}
+
+.cv a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-radius: 10px;
+  width: max-content;
+}
+
+.cv a:hover{
+  background-color: rgb(0, 85, 85);
+  transition: 0.5s;
+  }
+
+.cv a span{
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-about {
+    height: auto;
+    margin-top: 5vh;
+  }
+  
+  .profile-img {
+    display: none;
+  }
+
+
+  .banner-bio {
+      width: 90%;
+      height: auto;
+      padding: 2%;
+  }
+  
+  .text-bio {
+      width: 90%;
+      font-size: 1rem;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  .text-bio h1 {
+      font-size: 1.5rem;
+  }
 }

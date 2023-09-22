@@ -9,7 +9,7 @@ return (
             <li><a href="#about">Sobre</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#contact">Contatos</a></li>
         </ul>
     </nav>
   );

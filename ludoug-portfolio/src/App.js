@@ -4,7 +4,6 @@ import NavMenu from './components/NavMenu';
 import Opening from './components/Opening';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 
@@ -19,11 +18,11 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Contact />
       </main>
       <footer>
         <Footer />
       </footer>
+        <script src="/path/to/flickity.pkgd.min.js"></script>
     </div>
   );
 }

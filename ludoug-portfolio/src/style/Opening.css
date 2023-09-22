@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.container .static {
+.container-opening .static {
   display: flex;
   color: rgb(255, 255, 255);
   align-items: center;
@@ -21,7 +21,7 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
-.container .dinamic {
+.container-opening .dinamic {
   line-height: 8vh;
   height: 8vh;
   overflow: hidden;
@@ -47,6 +47,10 @@
 }
 
 .dinamic li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   list-style: none;
   color: rgb(255, 255, 255);
   font-size: 8vh;
@@ -72,4 +76,46 @@
 .typing-animation {
   animation: typing 4s steps(16) infinite normal both,
   blink-caret 500ms infinite normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-opening .static {
+    font-size: 3.9vh;
+  }
+  
+  .container-opening .dinamic {
+    line-height: 4vh;
+    height: 4vh;
+    padding-left: 0ch;
+  }
+
+  .dinamic li span {
+    font-size: 5vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -4vh;
+    }
+  }
+
+  .typing-animation {
+    animation: typing 4s steps(16) infinite normal both,
+    blink-caret 500ms infinite normal;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12.6ch;
+    }
+  }
+
+  .container-opening {
+    width: 80%;
+  }
 }
