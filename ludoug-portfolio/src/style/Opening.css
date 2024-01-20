@@ -78,7 +78,7 @@
   blink-caret 500ms infinite normal;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
   .container-opening .static {
     font-size: 3.9vh;
   }
